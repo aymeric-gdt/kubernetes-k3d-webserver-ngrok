@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: votre-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: votre-app
+  template:
+    metadata:
+      labels:
+        app: votre-app
+    spec:
+      containers:
+      - name: votre-app
+        image: aymericgdt/votre-app:v1
+        ports:
+        - containerPort: 8080
