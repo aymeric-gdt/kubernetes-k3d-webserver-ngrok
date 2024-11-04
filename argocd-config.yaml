@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/votreusername/votre-repo.git
+    repoURL: https://github.com/aymeric-gdt/kubernetes-k3d-webserver-ngrok
     targetRevision: HEAD
     path: .
   destination:
